@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-container bg-sunny"></div>
+
+    <div class="container">
+        <div class="search-section">
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="locationInput"
+                    placeholder="Try: Sunny, Rainy, Cloudy, Snowy, Storm..."
+                    autocomplete="off"
+                >
+                <button class="location-btn" id="searchBtn">Search</button>
+            </div>
+            <button class="location-btn" id="geoBtn">📍 My Location</button>
+        </div>
+
+        <div id="content">
+            <div class="loading">
+                <div class="spinner"></div>
+                <div class="loading-text">Getting weather data...</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+</html>
